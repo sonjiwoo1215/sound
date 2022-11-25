@@ -21,8 +21,9 @@ function draw() {
   
 }
 function toggle(){
-  wave.start();
+  
   if(!playing){
+    wave.start();
     wave.amp(0.5,1);
     playing=true;
   
