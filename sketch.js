@@ -8,7 +8,7 @@ function setup() {
   createCanvas(640,480);
   wave = new p5.Oscillator();
   wave.setType('sine');
-  wave.start();
+  
   wave.freq(440);
   wave.amp(0.1);
   
@@ -21,6 +21,7 @@ function draw() {
   
 }
 function toggle(){
+  wave.start();
   if(!playing){
     wave.amp(0.5,1);
     playing=true;
