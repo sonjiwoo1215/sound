@@ -15,11 +15,15 @@ function setup() {
   button = createButton('play/pause');
   button.mousePressed(toggle);
 
+  
+
 }
 
 function draw() {
   
 }
+
+
 function toggle(){
   
   if(!playing){
@@ -33,3 +37,4 @@ function toggle(){
     playing = false;
   }
 }
+
