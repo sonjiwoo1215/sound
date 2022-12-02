@@ -1,5 +1,7 @@
 let r,g,b;
 
+
+
 function setup() {
   
   createCanvas(displayWidth,displayHeight);
@@ -11,8 +13,8 @@ function setup() {
 }
 
 function draw() {
-  background(r,g,b);
-  console.log('draw');
+  background(255);
+  console.log(accelerationX,accelerationY,accelerationZ);
 }
 
 function deviceMoved(){
