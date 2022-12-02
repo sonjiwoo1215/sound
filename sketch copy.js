@@ -1,6 +1,4 @@
-var wave;
-var playing = false;
-var button;
+let r,g,b;
 
 
 
@@ -15,15 +13,15 @@ function setup() {
 }
 
 function draw() {
-  background(r,g,b);
-  console.log('draw');
+  background(255);
+  console.log(accelerationX,accelerationY,accelerationZ);
 }
 
 function deviceMoved(){
   
   r=map(accelerationX, -90,90,100,175);
-  g=map(accelerationX, -90,90,100,175);
-  b=map(accelerationX, -90,90,100,175);
+  g=map(accelerationY, -90,90,100,200);
+  b=map(accelerationZ, -90,90,100,200);
 }
 
 
